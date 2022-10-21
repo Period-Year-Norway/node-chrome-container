@@ -2,6 +2,8 @@ name: Create and publish the node&chrome Docker image
 
 on:
   workflow_dispatch:
+  schedule:
+  - cron: "0 12 * * 2"
 
 env:
   REGISTRY: ghcr.io
